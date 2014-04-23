@@ -1,0 +1,9 @@
+{
+	"name": "atomita/wordpress-shortcodes",
+	"require": {
+		"php": ">=5.3"
+	},
+	"autoload": {
+		"psr-0": {"": "src/"}
+	}
+}
