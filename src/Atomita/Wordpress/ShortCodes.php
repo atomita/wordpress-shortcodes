@@ -1,6 +1,6 @@
 <?php
 
-namespace \Atomita\Wordpress;
+namespace Atomita\Wordpress;
 
 /**
  * @author atomita
