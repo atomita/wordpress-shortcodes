@@ -7,7 +7,7 @@
 		"name": "atomita"
 	}
 	],
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"require": {
 		"php": ">=5.3",
 		"atomita/php-facade": "*"
