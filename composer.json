@@ -1,9 +1,18 @@
 {
 	"name": "atomita/wordpress-shortcodes",
+	"keywords": ["wordpress", "theme"],
+	"license": "LGPLv3",
+	"authors": [
+	{
+		"name": "atomita"
+	}
+	],
+	"version": "0.0.1",
 	"require": {
-		"php": ">=5.3"
+		"php": ">=5.3",
+		"atomita/php-facade": "*"
 	},
 	"autoload": {
-		"psr-0": {"": "src/"}
+		"classmap": ["src/", "src/Atomita/Wordpress/"]
 	}
 }
