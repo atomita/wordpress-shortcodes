@@ -114,7 +114,15 @@ class ShortCodes
 		if (empty($pages)){
 			return '';
 		}
-		return apply_filters('the_excerpt', apply_filters('get_the_excerpt', $pages[0]->post_excerpt));
+
+		global $post;
+		$_post	 = $post;
+		$post	 = get_post($pages[0]->ID);
+		setup_postdata($post);
+		$excerpt = apply_filters('the_excerpt', get_the_excerpt());
+		$post	 = $_post;
+		setup_postdata($post);
+		return $excerpt;
 	}
 
 	/**
