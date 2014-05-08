@@ -83,7 +83,9 @@ class ShortCodes
 		return '';
 	}
 
-
+	/**
+	 * post title
+	 */
 	public function title($atts)
 	{
 		$attrs = shortcode_atts(array('', '', 'slug' => ''), $atts);
@@ -98,6 +100,9 @@ class ShortCodes
 		return get_the_title($pages[0]->ID);
 	}
 
+	/**
+	 * post excerpt
+	 */
 	public function excerpt($atts)
 	{
 		$attrs = shortcode_atts(array('', 'slug' => ''), $atts);
@@ -112,6 +117,9 @@ class ShortCodes
 		return apply_filters('the_excerpt', apply_filters('get_the_excerpt', $pages[0]->post_excerpt));
 	}
 
+	/**
+	 * post content
+	 */
 	public function content($atts)
 	{
 		$attrs = shortcode_atts(array('', null, false, 'slug' => '', 'more' => null, 'strip_teaser' => false), $atts);
@@ -135,4 +143,5 @@ class ShortCodes
 		setup_postdata($post);
 		return $content;
 	}
+
 }
