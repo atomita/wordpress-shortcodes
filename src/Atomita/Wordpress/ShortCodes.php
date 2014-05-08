@@ -109,7 +109,7 @@ class ShortCodes
 		$slug  = empty($attrs[0]) ? (empty($attrs['slug']) ? '' : $attrs['slug']) : $attrs[0];
 
 		global $wpdb;
-		$query = $wpdb->prepare("select post_excerpt from {$wpdb->posts} where post_name = %s", $slug);
+		$query = $wpdb->prepare("select ID from {$wpdb->posts} where post_name = %s", $slug);
 		$pages = $wpdb->get_results($query);
 		if (empty($pages)){
 			return '';
