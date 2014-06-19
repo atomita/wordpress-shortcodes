@@ -7,12 +7,12 @@
 		"name": "atomita"
 	}
 	],
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"require": {
 		"php": ">=5.3",
-		"atomita/php-facade": "*"
+		"atomita/php-facade": "0.1.*"
 	},
 	"autoload": {
-		"classmap": ["src/", "src/Atomita/Wordpress/"]
+		"classmap": ["src/", "src/atomita/wordpress/"]
 	}
 }

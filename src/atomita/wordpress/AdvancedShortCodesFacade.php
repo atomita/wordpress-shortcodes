@@ -1,11 +1,11 @@
 <?php
 
-namespace Atomita\Wordpress;
+namespace atomita\wordpress;
 
 /**
  * @author atomita
  */
-class ShortCodesFacade extends \Atomita\FacadeAEasy
+class AdvancedShortCodesFacade extends \atomita\FacadeAEasy
 {
 
 	static public function activate()
